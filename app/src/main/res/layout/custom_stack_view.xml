@@ -7,7 +7,7 @@
     android:animateLayoutChanges="true"
     android:background="@color/eerie_black"
     android:gravity="center"
-    android:layout_marginTop="20dp"
+    android:layout_marginTop="@dimen/margin_card"
     tools:ignore="MissingDefaultResource">
 
     <in.frostapps.expandableview.customview.DateSelectView

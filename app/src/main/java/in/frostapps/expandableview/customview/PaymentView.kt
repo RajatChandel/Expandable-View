@@ -1,6 +1,5 @@
-package `in`.frostapps.expandableview.views
+package `in`.frostapps.expandableview.customview
 
-import `in`.frostapps.expandableview.customview.CustomStackItem
 import `in`.frostapps.expandableview.databinding.PaymentLayoutBinding
 import android.content.Context
 import android.util.AttributeSet
