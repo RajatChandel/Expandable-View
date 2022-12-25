@@ -2,7 +2,7 @@ package `in`.frostapps.expandableview.activities
 
 
 import `in`.frostapps.expandableview.R
-import `in`.frostapps.expandableview.Trip
+import `in`.frostapps.expandableview.model.Trip
 import `in`.frostapps.expandableview.adapter.TripAdapter
 import `in`.frostapps.expandableview.databinding.ActivityMainBinding
 import androidx.appcompat.app.AppCompatActivity

@@ -1,6 +1,6 @@
 package `in`.frostapps.expandableview.activities
 
-import `in`.frostapps.expandableview.Trip
+import `in`.frostapps.expandableview.model.Trip
 import `in`.frostapps.expandableview.databinding.ActivityTripDetailsBinding
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
