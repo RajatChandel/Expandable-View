@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_corner_radius">12dp</dimen>
+    <dimen name="card_view_elevation">4dp</dimen>
+    <dimen name="card_view_margin">8dp</dimen>
+    <dimen name="margin_card">20dp</dimen>
+    <dimen name="margin_body">12dp</dimen>
+    <dimen name="saperator_height">1dp</dimen>
+    <dimen name="saperator_margin">30dp</dimen>
+    <dimen name="body_text_size">16sp</dimen>
+    <dimen name="margin_body_close">4dp</dimen>
+    <dimen name="padding_card">20dp</dimen>
+    <dimen name="text_size_subheading">13sp</dimen>
+    <dimen name="margin_payment">40dp</dimen>
+    <dimen name="large_text_size">24sp</dimen>
+</resources>

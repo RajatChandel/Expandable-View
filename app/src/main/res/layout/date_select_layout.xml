@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:padding="@dimen/padding_card"
+    android:background="@drawable/rounded_background">
+
+    <TextView
+        android:id="@+id/headingDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        style="@style/heading_style_one"/>
+
+    <Space
+        android:id="@+id/space"
+        style="@style/space_style"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/headingDate"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <LinearLayout
+        android:id="@+id/llFrom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_body_close"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/llDest">
+
+        <ImageView
+            android:id="@+id/iconFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_place_24" />
+
+    <TextView
+        android:id="@+id/tvFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_body_close"
+        android:visibility="visible"
+        style="@style/place_text_style"
+        tools:text="Mumbai, Maharashtra"
+        tools:textColor="@color/white"
+        app:drawableStartCompat="@drawable/ring" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llDest"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/llFrom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <ImageView
+            android:id="@+id/iconDest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_place_24"/>
+
+        <TextView
+            android:id="@+id/tvDest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_body"
+            style="@style/place_text_style"
+            tools:text="Mumbai, Maha"
+            tools:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/saperator_height"
+        android:background="@color/grey"
+        android:layout_marginTop="@dimen/saperator_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llFrom"/>
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trip_calendar"
+        android:textColor="@color/mint_cream"
+        android:textSize="@dimen/body_text_size"
+        android:fontFamily="@font/ibm_plex_sans_medium"
+        android:layout_marginTop="@dimen/margin_body"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line" />
+
+    <CalendarView
+        android:id="@+id/calDateSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_body"
+        android:fontFamily="@font/ibm_plex_sans"
+        android:layout_marginEnd="@dimen/margin_body"
+        android:layout_marginTop="@dimen/margin_body"
+        app:layout_constraintTop_toBottomOf="@+id/heading"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
