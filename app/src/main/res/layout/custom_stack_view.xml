@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:animateLayoutChanges="true"
+    android:background="@color/eerie_black"
+    android:gravity="center"
+    android:layout_marginTop="20dp"
+    tools:ignore="MissingDefaultResource">
+
+    <in.frostapps.expandableview.customview.DateSelectView
+        android:id="@+id/dateSelectView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <in.frostapps.expandableview.customview.PassengerView
+        android:id="@+id/passengerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:background="@color/eerie_black"
+        app:layout_constraintTop_toBottomOf="@id/dateSelectView"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <in.frostapps.expandableview.customview.PaymentView
+        android:id="@+id/paymentView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:background="@color/radical_red"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/passengerView"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
