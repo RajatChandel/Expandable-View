@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:padding="@dimen/padding_card"
+    android:background="@drawable/rounded_background">
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total"
+        android:fontFamily="@font/ibm_plex_sans"
+        style="@style/heading_style_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Space
+        android:id="@+id/paymentSpace"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_card"
+        app:layout_constraintTop_toBottomOf="@id/tvPay"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvPay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_body"
+        android:text="@string/pay"
+        android:fontFamily="@font/ibm_plex_sans"
+        style="@style/heading_style_one"
+        android:visibility="gone"
+        android:textColor="@color/mint_cream"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_payment"
+        android:textSize="@dimen/large_text_size"
+        android:text="@string/_2_4_btc"
+        android:textColor="@color/mint_cream"
+        android:fontFamily="@font/ibm_plex_sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTotal" />
+
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_payment"
+        android:textSize="@dimen/body_text_size"
+        android:text="@string/scan_face_to_complete"
+        android:textColor="@color/mint_cream"
+        android:fontFamily="@font/ibm_plex_sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAmount" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:padding="@dimen/padding_card"
+    android:background="@drawable/rounded_background_red">
+
+    <TextView
+        android:id="@+id/headingCollapsed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/passengers"
+        android:visibility="gone"
+        android:fontFamily="@font/ibm_plex_sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/heading_style_one"/>
+
+    <Space
+        android:id="@+id/space"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_card"
+        app:layout_constraintTop_toBottomOf="@id/headingCollapsed"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/headingPassenger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/how_many_adults"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="@font/ibm_plex_sans"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/heading_style_one"/>
+
+    <TextView
+        android:id="@+id/subHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_body_close"
+        android:text="@string/_12_years"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_subheading"
+        android:fontFamily="@font/ibm_plex_sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headingPassenger" />
+
+    <NumberPicker
+        android:id="@+id/numPicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:theme="@style/custom_number_picker"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/subHeading" />
+
+    <TextView
+        android:id="@+id/passengerNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_body"
+        android:fontFamily="@font/ibm_plex_sans"
+        tools:text="3 Adults"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/numPicker"
+        style="@style/body_text_one"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

@@ -1,5 +1,12 @@
 <resources>
-    <string name="app_name">Expandable View</string>
+    <string name="app_name">ExpandableStack</string>
+    <string name="scan_face_to_complete">Scan face to complete</string>
+    <string name="_2_4_btc">2.4 BTC</string>
+    <string name="pay">Pay</string>
+    <string name="total">Total</string>
+    <string name="passengers">Passengers</string>
+    <string name="how_many_adults">How many adults?</string>
+    <string name="_12_years">12 years+</string>
     <string name="select_date">Select Date</string>
     <string name="trip_calendar">Trip Calendar</string>
 </resources>

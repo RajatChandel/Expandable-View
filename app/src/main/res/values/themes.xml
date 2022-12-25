@@ -33,4 +33,16 @@
         <item name="android:layout_width">match_parent</item>
     </style>
 
+    <style name="custom_number_picker" parent="Theme.AppCompat.Light" >
+        <item name="colorAccent">@color/radical_red</item>
+        <item name="colorControlNormal">@color/radical_red</item>
+        <item name="android:textColorPrimary">@color/mint_cream</item>
+        <item name="android:textSize">24sp</item>
+        <item name="background">@color/radical_red</item>
+    </style>
+
+    <style name="body_text_one">
+        <item name="android:textColor">@color/mint_cream</item>
+        <item name="android:textSize">16sp</item>
+    </style>
 </resources>
