@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/eerie_black"
+    android:orientation="vertical"
+    android:animateLayoutChanges="true">
+
+ <androidx.appcompat.widget.Toolbar
+     android:id="@+id/toolbarDetails"
+     android:layout_width="match_parent"
+     android:layout_height="?actionBarSize"
+     android:background="@color/eerie_black"
+     app:titleTextColor="@color/mint_cream"
+     app:title="Schedule Trip"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     android:theme="@style/ToolbarTheme"/>
+
+ <in.frostapps.expandableview.views.CustomStackView
+     android:id="@+id/customStackView"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"/>
+
+</LinearLayout>

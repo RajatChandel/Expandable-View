@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="12dp"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:cardElevation="4dp" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/image_1"
+            />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@drawable/top_to_bottom"/>
+
+            <Button
+                android:id="@+id/btnPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:fontFamily="@font/ibm_plex_sans_medium"
+                android:layout_margin="@dimen/margin_card"
+                tools:text="0.1btc"/>
+
+            <TextView
+                android:id="@+id/tvPlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="40dp"
+                android:fontFamily="@font/ibm_plex_sans_medium"
+                android:textColor="@color/mint_cream"
+                android:textSize="22sp"
+                tools:text="Manali"
+                />
+
+            <TextView
+                android:id="@+id/tvState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/ibm_plex_sans"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/body_text_size"
+                tools:text="Manali"
+                />
+
+
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+

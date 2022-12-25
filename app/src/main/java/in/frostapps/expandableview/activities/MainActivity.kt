@@ -1,5 +1,6 @@
-package `in`.frostapps.expandableview
+package `in`.frostapps.expandableview.activities
 
+import `in`.frostapps.expandableview.R
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
